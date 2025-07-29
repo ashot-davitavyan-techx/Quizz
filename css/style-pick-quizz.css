@@ -1,3 +1,4 @@
+/* ---------------------------------GENERAL STYLE------------------------------------ */
 * {
   box-sizing: border-box;
   margin: 0 0;
@@ -7,11 +8,11 @@
 
 :root {
   --background-color: rgb(7, 15, 43);
-  --secondary-back-color: rgb(27, 26, 85);
+  --secondary-back-color: rgb(3, 2, 60);
   --third-back-color: rgb(20, 31, 103);
 
-  --text-color: white;
-  --secondary-text-color: rgb(175, 181, 216);
+  --text-color: rgb(255, 255, 255);
+  --secondary-text-color: rgb(209, 195, 63);
 
   --main-color: rgb(26, 42, 128);
   --secondary-color: yellow;
@@ -34,36 +35,71 @@
   height: 100%;
 }
 
-.link {
-  text-decoration: none;
+a:-webkit-any-link {
   color: unset;
+}
+/* ----------------------------------NAVIGAITON ----------------------------------- */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  align-items: center;
+  flex-direction: row;
   width: 100%;
-  height: 100%;
+  background-color: var(--secondary-back-color);
+  height: 6vh;
+}
+
+.navbar a {
+  color: var(--secondary-text-color);
+  background-color: var(--third-back-color);
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* ---------------------------------------LINKS STYLING ---------------------------------- */
+
+.link {
+  text-decoration: none;
+}
+
 .link:link {
   text-decoration: none;
-  color: unset;
 }
 
 .link:visited {
   text-decoration: none;
-  color: unset;
 }
 
 .link:hover {
   text-decoration: none;
-  color: unset;
 }
 
 .link:active {
   text-decoration: none;
-  color: unset;
 }
 
+/* ---------------------------------HEADER------------------------------------------------------ */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.heading {
+  color: var(--text-color);
+  margin: clamp(1.5rem, 2vw, 4rem) 0 clamp(1.5rem, 2.5vw, 4rem) 0;
+  font-size: clamp(2.7rem, 2.7vw, 3.5rem);
+  font-weight: 800;
+}
+
+/* -------------------------------------------MAIN CONTAINERS SYTLING----------------------------------------------- */
 .main-page-body {
   background-color: var(--background-color);
   display: flex;
@@ -71,26 +107,21 @@
   flex-direction: column;
 }
 
-.header {
-  color: var(--text-color);
-  margin: clamp(1.5rem, 2.5vw, 4rem) 0;
-  font-size: clamp(2.3rem, 2.7vw, 3.5rem);
-  font-weight: 800;
-}
-
 .main-container {
   padding: 1.5rem 0;
   border-radius: 3rem;
   width: min(50rem, 85%);
-  height: 75%;
+  height: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
   overflow-y: auto;
   background-color: var(--secondary-back-color);
+  margin-bottom: 2vh;
 }
 
+/* --------------------------------------------------  SCROLL STYLING ----------------------------------------- */
 .main-container::-webkit-scrollbar {
   display: block;
   width: 0.75rem;
@@ -100,7 +131,7 @@
 }
 
 .main-container::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
+  background-color: rgba(0, 0, 255, 0.442);
   border-right: none;
   border-left: none;
   border-radius: 1rem;
@@ -116,6 +147,7 @@
   margin-top: 2.25rem;
 }
 
+/* --------------------------------------------------QUIZZ OPTIONS-------------------------------- */
 .option {
   cursor: pointer;
   background-color: var(--main-color);
@@ -156,13 +188,13 @@
 .quizz-info {
   color: var(--secondary-text-color);
   font-size: 65%;
-  font-size: 1.25rem;
+  font-size: min(1.25rem, 2vw);
   font-weight: 600;
   display: flex;
 }
 
 .quizz-name {
-  font-size: 3rem;
+  font-size: clamp(2rem, 1.5rem + 2vw, 3.3rem);
   color: var(--text-color);
   width: 40%;
   display: flex;
