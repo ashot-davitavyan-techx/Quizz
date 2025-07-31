@@ -2,7 +2,7 @@
 /* .heading {
   color: var(--text-color-1);
   margin: clamp(1.5rem, 2vw, 4rem) 0 clamp(1.5rem, 2.5vw, 4rem) 0;
-  font-size: clamp(2.7rem, 2.7vw, 3.5rem);
+  font-size: var(--font-big);
   font-weight: 800;
 } */
 /* -------------------------------------------MAIN CONTAINERS SYTLING----------------------------------------------- */
@@ -61,13 +61,13 @@
 
 .quizz-info {
   color: var(--text-color-2);
-  font-size: 1rem;
+  font-size: var(--font-xsmall);
   font-weight: 600;
   display: flex;
 }
 
 .quizz-name {
-  font-size: clamp(2rem, 1.5rem + 3vw, 3.5rem);
+  font-size: var(--font-mid);
   color: var(--text-color-1);
   width: max(40%, 10rem);
   display: flex;

@@ -1,4 +1,3 @@
-
 .file-upload-modal {
 	color: white;
 	display:flex;
@@ -6,20 +5,31 @@
 	left:50%;
 	top:50%;
 	transform: translate(-50%, 0);
-	background-color: var(--secondary-back-color);
+	background-color: var(--back-color-2);
 	width: 40%;
 	height: 150px;
 	border-radius: 1rem;
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
+	z-index: 3;
 }
 
 .file-input {
-	font-size:1.5rem;
+	font-size:var(--font-small);
+	background-color: var(--back-color-3);
 	width: 100%;
+	padding: 10px;
+	border-radius: 1rem;
+	width: min(80%, 38rem);
 }
 
-.blurry {
+.overlay {
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(10px);
 }
