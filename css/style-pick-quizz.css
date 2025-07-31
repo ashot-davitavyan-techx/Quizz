@@ -1,10 +1,10 @@
 /* ---------------------------------HEADER------------------------------------------------------ */
-.heading {
+/* .heading {
   color: var(--text-color-1);
   margin: clamp(1.5rem, 2vw, 4rem) 0 clamp(1.5rem, 2.5vw, 4rem) 0;
   font-size: var(--font-big);
   font-weight: 800;
-}
+} */
 /* -------------------------------------------MAIN CONTAINERS SYTLING----------------------------------------------- */
 .main-container {
   padding: 1.5rem 0;
@@ -17,14 +17,33 @@
   gap: 1.5rem;
   overflow-y: auto;
   background-color: var(--back-color-2);
-  margin-bottom: 2vh;
+  margin: auto 0;
+  position: relative;
 }
 
 /* --------------------------------------------------QUIZZ OPTIONS-------------------------------- */
-
 .option {
   justify-content: start;
   width: min(40rem, 95%);
+}
+
+.quizz-search {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border: solid 0.25rem var(--text-color-2);
+  font-size: 2.75rem;
+  color: var(--text-color-1);
+}
+
+.quizz-search::placeholder {
+  color: var(--text-color-1);
+  text-align: center;
+  font-weight: 800;
+}
+
+.quizz-search:focus {
+  filter: brightness(1.5);
 }
 
 .quizz-info-tab {
