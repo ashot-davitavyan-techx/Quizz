@@ -9,7 +9,7 @@
 .main-container {
   padding: 1.5rem 0;
   border-radius: 3rem;
-  width: min(50rem, 85%);
+  width: min(50rem, 95%);
   height: 85%;
   display: flex;
   flex-direction: column;
@@ -21,28 +21,10 @@
 }
 
 /* --------------------------------------------------QUIZZ OPTIONS-------------------------------- */
+
 .option {
-  cursor: pointer;
-  background-color: var(--main-color-1);
-  border-radius: 1rem;
-  height: 7rem;
-  width: 80%;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: none;
-  transition-duration: 80ms ease;
-  padding: 0.75rem;
-}
-
-.option:hover {
-  transform: scale(1.03);
-}
-
-.option:active {
-  filter: brightness(1.4);
-  font-size: 2.15rem;
+  justify-content: start;
+  width: min(40rem, 95%);
 }
 
 .quizz-info-tab {
@@ -51,28 +33,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
-  margin-right: 5%;
   justify-content: space-evenly;
+  width: max(25%, 8rem);
+  margin-right: 5%;
   height: 100%;
   padding: 0.5rem 0.25rem;
 }
 
 .quizz-info {
   color: var(--text-color-2);
-  font-size: 65%;
-  font-size: min(1.25rem, 2vw);
+  font-size: 1rem;
   font-weight: 600;
   display: flex;
 }
 
 .quizz-name {
-  font-size: clamp(2rem, 1.5rem + 2vw, 3.3rem);
+  font-size: clamp(2rem, 1.5rem + 3vw, 3.5rem);
   color: var(--text-color-1);
-  width: 40%;
+  width: max(40%, 10rem);
   display: flex;
   justify-content: center;
-  margin-right: 30%;
   align-items: center;
   font-weight: 700;
 }
