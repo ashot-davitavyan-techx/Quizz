@@ -31,15 +31,20 @@
   position: sticky;
   top: 0;
   z-index: 2;
+  border: solid 0.25rem var(--text-color-2);
+  font-size: 2.75rem;
+  color: var(--text-color-1);
 }
-/* .quizz-search::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  background-color: red;
-  width: 100%;
-} */
+
+.quizz-search::placeholder {
+  color: var(--text-color-1);
+  text-align: center;
+  font-weight: 800;
+}
+
+.quizz-search:focus {
+  filter: brightness(1.5);
+}
 
 .quizz-info-tab {
   background-color: var(--back-color-3);
