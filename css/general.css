@@ -30,7 +30,8 @@
   --font-big: clamp(2.7rem, 2.7vw, 3.5rem);
   --font-mid: clamp(2rem, 1.5rem + 3vw, 3.5rem);
   --font-small: clamp(1.2rem, 1.5vw, 2.5rem);
-  --font-xsmall: clamp(0.9rem, 0.8vw, 1.5rem);
+  --font-xsmall: 1rem;
+  --font-1rem: 1rem;
 }
 
 .html {

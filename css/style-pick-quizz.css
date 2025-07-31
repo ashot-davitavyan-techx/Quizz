@@ -1,10 +1,3 @@
-/* ---------------------------------HEADER------------------------------------------------------ */
-/* .heading {
-  color: var(--text-color-1);
-  margin: clamp(1.5rem, 2vw, 4rem) 0 clamp(1.5rem, 2.5vw, 4rem) 0;
-  font-size: var(--font-big);
-  font-weight: 800;
-} */
 /* -------------------------------------------MAIN CONTAINERS SYTLING----------------------------------------------- */
 .main-container {
   padding: 1.5rem 0;
@@ -61,7 +54,7 @@
 
 .quizz-info {
   color: var(--text-color-2);
-  font-size: var(--font-xsmall);
+  font-size: var(--font-1rem);
   font-weight: 600;
   display: flex;
 }
