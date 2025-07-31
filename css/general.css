@@ -1,0 +1,116 @@
+/* ------------------------------------------------ MOST GENERAL STYLING  */
+* {
+  box-sizing: border-box;
+  margin: 0 0;
+  padding: 0 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --------- ROOT */
+:root {
+  --back-color-1: rgb(7, 15, 43);
+  --back-color-2: rgb(3, 2, 60);
+  --back-color-3: rgb(20, 31, 103);
+
+  --text-color-1: rgb(255, 255, 255);
+  --text-color-2: rgb(209, 195, 63, 1);
+
+  --main-color-1: rgb(26, 42, 128);
+  --main-color-2: yellow;
+
+  --exist: 1px white solid;
+
+  --white: white;
+}
+
+.html {
+  font-size: 14px;
+}
+
+.html,
+.main-page-body {
+  width: 100%;
+  height: 100%;
+}
+
+/* ----- SCROLBAR STYLING */
+
+::-webkit-scrollbar {
+  display: block;
+  width: 0.75rem;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(from var(--text-color-2) r g b / 0.9);
+  border-right: none;
+  border-left: none;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 2.25rem;
+}
+
+::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 2.25rem;
+}
+
+/* ------ LINK STYLING  */
+
+.link {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------------------------------------- NAV BAR STYLING */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--back-color-2);
+  height: 6vh;
+
+  .link {
+    color: var(--text-color-2);
+    background-color: var(--back-color-3);
+    width: 7rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-weight: 700;
+  }
+
+  .link:hover {
+    filter: brightness(1.4);
+  }
+}
+
+/* ------------------------------------------------------------- BODY STYLING */
+
+.main-page-body {
+  background-color: var(--back-color-1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ------------------------------------------------------------ HEADER STYLING  */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
