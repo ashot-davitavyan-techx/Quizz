@@ -1,6 +1,6 @@
 .file-upload-modal {
+	display:none;
 	color: white;
-	display:flex;
 	position:fixed;
 	left:50%;
 	top:50%;
@@ -25,6 +25,7 @@
 }
 
 .overlay {
+	display:none;
 	position:fixed;
 	top:0;
 	left:0;
