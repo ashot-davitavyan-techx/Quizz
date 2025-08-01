@@ -1,0 +1,21 @@
+{
+  "title": "JavaScript Basics",
+  "description": "A short quiz to test your knowledge of JavaScript fundamentals.",
+  "questions": [
+    {
+      "description": "Which of the following is a JavaScript data type?",
+      "answers": ["int", "string", "boolean", "character"],
+      "rightAnswerIndex": 2
+    },
+    {
+      "description": "What keyword declares a constant in JavaScript?",
+      "answers": ["let", "var", "const", "define"],
+      "rightAnswerIndex": 2
+    },
+    {
+      "description": "Which method converts JSON text into a JavaScript object?",
+      "answers": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.objectify()"],
+      "rightAnswerIndex": 0
+    }
+  ]
+}

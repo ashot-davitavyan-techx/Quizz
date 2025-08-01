@@ -5,8 +5,8 @@ document.getElementById("upload-button").addEventListener("click", function () {
 	overlay.style.display = "block";
 });
 
-document.getElementById("create-button").addEventListener("click", function () {
-	
+document.getElementById("button-create").addEventListener("click", function () {
+	window.location.href = "./create-quiz-page.html";
 });
 
 document.getElementById("overlay").addEventListener("click", function () {
@@ -25,11 +25,17 @@ document.getElementById("file-input").addEventListener("change", function (event
 	const reader = new FileReader();
 	reader.onload = function (e) {
 		const fileContent = e.target.result;
-		console.log(fileContent);
 		uploadModal.style.display = "none";
 		overlay.style.display = "none";
 		document.getElementById("file-input").value = "";
-		// window.location.href = ;
+		try{
+			const parsedQuiz = JSON.parse(fileContent);
+			localStorage.setItem("uploadedQuizzData", JSON.stringify(parsedQuiz));
+		} catch (error) {
+			console.log("Invalid file format");
+			alert("Invalid file format");
+		}
+		window.location.href = "./create-quiz-page.html";
 	}
 
 	reader.onerror = function (e) {
