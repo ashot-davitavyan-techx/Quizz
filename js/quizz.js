@@ -1,4 +1,4 @@
-class quizz {
+class Quizz {
 	constructor(title, questions = [], description){
 		this.title = title;
 		this.questions = questions;

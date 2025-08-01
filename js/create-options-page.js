@@ -5,6 +5,10 @@ document.getElementById("upload-button").addEventListener("click", function () {
 	overlay.style.display = "block";
 });
 
+document.getElementById("create-button").addEventListener("click", function () {
+	
+});
+
 document.getElementById("overlay").addEventListener("click", function () {
 	const uploadModal = document.getElementById("file-upload-modal");
 	uploadModal.style.display = "none";
