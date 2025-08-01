@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="/css/style-main.css" />
     <link rel="stylesheet" href="/css/create-options-page.css" />
   </head>
-  <div class="file-upload-modal">
-    <input class="file-input" type="file" />
+  <div class="file-upload-modal" id="file-upload-modal">
+    <input class="file-input" id="file-input" type="file" />
   </div>
+  <div class="overlay" id="overlay"></div>
   <body class="main-page-body">
     <header class="header">
       <nav class="navbar">
@@ -23,12 +24,13 @@
       <span class="heading">CHOOSE AN OPTION</span>
     </header>
     <main class="main-container">
-      <button type="button" id="start-button" class="option">
-        <a class="link" href="quizz-menu.html">UPLOAD</a>
+      <button type="button" id="upload-button" class="option">
+        <a class="link">UPLOAD</a>
       </button>
       <button type="button" id="create-button" class="option">
         <a class="link" href="create-options-page.html">CREATE</a>
       </button>
     </main>
   </body>
+  <script src="../js/create-options-page.js"></script>
 </html>
