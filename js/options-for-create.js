@@ -1,6 +1,6 @@
 document.getElementById("upload-button").addEventListener("click", function () {
 	const uploadModal = document.getElementById("file-upload-modal");
-	const overlay = document.getElementById("overlay");
+	const overlay = document.getElementById("options-overlay");
 	uploadModal.style.display = "flex";
 	overlay.style.display = "block";
 });
@@ -9,7 +9,7 @@ document.getElementById("button-create").addEventListener("click", function () {
 	window.location.href = "./create-quiz-page.html";
 });
 
-document.getElementById("overlay").addEventListener("click", function () {
+document.getElementById("options-overlay").addEventListener("click", function () {
 	const uploadModal = document.getElementById("file-upload-modal");
 	uploadModal.style.display = "none";
 	this.style.display = "none";
@@ -17,7 +17,7 @@ document.getElementById("overlay").addEventListener("click", function () {
 
 document.getElementById("file-input").addEventListener("change", function (event) {
 	const uploadModal = document.getElementById("file-upload-modal");
-	const overlay = document.getElementById("overlay");
+	const overlay = document.getElementById("options-overlay");
 	const uploadedFile = event.target.files[0];
 
 	if (!uploadedFile) return;
