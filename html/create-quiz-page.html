@@ -1,106 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Document</title>
-		<link rel="stylesheet" href="../css/general.css" />
-		<link rel="stylesheet" href="../css/style-main.css" />
-		<link rel="stylesheet" href="../css/create-quiz-page.css" />
-	</head>
-	<div class="overlay" id="create-overlay"></div>
-	<form id="question-form" class="question-form">
-		<div class="question-form-container">
-			<input
-				class="quiz-input mid-font"
-				type="text"
-				id="input-question"
-				name="question"
-				placeholder="Question"\
-			/>
-			<div
-				class="question-answers-container"
-				id="question-answers"
-			></div>
-			<button
-				class="button-add-answer"
-				id="button-add-answer"
-				type="button"
-			>
-				Add Answer
-			</button>
-			<button
-				class="button-question-submit"
-				id="button-question-submit"
-			>
-				Submit
-			</button>
-		</div>
-	</form>
-	<body class="main-page-body">
-		<header class="header">
-			<nav class="navbar">
-				<a href="index.html" class="link">MAIN PAGE</a>
-				<a href="quiz-menu.html" class="link">QUIZES</a>
-				<a href="options-for-create.html" class="link"
-					>CREATE</a
-				>
-				<a href="#" class="link">MAIN PAGE</a>
-				<a href="#" class="link">MAIN PAGE</a>
-			</nav>
-			<span class="heading">CREATE YOUR QUIZ</span>
-		</header>
-		<main class="main-container">
-			<form id="quiz-form">
-				<div class="quiz-form-container">
-					<div class="quiz-container">
-						<div>
-							<input
-								class="quiz-input"
-								type="text"
-								id="quiz-name"
-								name="quiz-name"
-								placeholder="Name"
-							/>
-						</div>
-						<div>
-							<input
-								class="quiz-input"
-								type="text"
-								id="quiz-name"
-								name="quiz-name"
-								placeholder="Topic"
-							/>
-						</div>
-						<div
-							class="quiz-question"
-							id="quiz-question"
-						></div>
-						<div
-							class="add-question-container"
-						>
-							<button
-								class="button-plus"
-								id="button-add-question"
-								type="button"
-								;
-							>
-								+
-							</button>
-						</div>
-					</div>
-					<button
-						class="button-create"
-						id="button-create-submit"
-					>
-						CREATE
-					</button>
-				</div>
-			</form>
-		</main>
-		<script src="../js/create-quiz.js"></script>
-	</body>
+<html lang="en" class="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/style-main.css" />
+    <link rel="stylesheet" href="../css/create-quiz-page.css" />
+  </head>
+  <div class="overlay" id="create-overlay"></div>
+  <form id="question-form" class="question-form">
+    <div class="question-form-container">
+      <input
+        class="quiz-input mid-font"
+        type="text"
+        id="input-question"
+        name="question"
+        placeholder="Question"
+        \
+      />
+      <div class="question-answers-container" id="question-answers"></div>
+      <button class="button-add-answer" id="button-add-answer" type="button">
+        Add Answer
+      </button>
+      <button class="button-question-submit" id="button-question-submit">
+        Submit
+      </button>
+    </div>
+  </form>
+  <body class="main-page-body">
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="link">MAIN PAGE</a>
+        <a href="quizz-menu.html" class="link">QUIZZES</a>
+        <a href="options-for-create.html" class="link">CREATE</a>
+        <a href="quizz.html" class="link">QUIZZ</a>
+        <a href="#" class="link">MAIN PAGE</a>
+      </nav>
+      <span class="heading">CREATE YOUR QUIZ</span>
+    </header>
+    <main class="main-container">
+      <form id="quiz-form">
+        <div class="quiz-form-container">
+          <div class="quiz-container">
+            <div>
+              <input
+                class="quiz-input"
+                type="text"
+                id="quiz-name"
+                name="quiz-name"
+                placeholder="Name"
+              />
+            </div>
+            <div>
+              <input
+                class="quiz-input"
+                type="text"
+                id="quiz-name"
+                name="quiz-name"
+                placeholder="Topic"
+              />
+            </div>
+            <div class="quiz-question" id="quiz-question"></div>
+            <div class="add-question-container">
+              <button
+                class="button-plus"
+                id="button-add-question"
+                type="button"
+                ;
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <button class="button-create" id="button-create-submit">
+            CREATE
+          </button>
+        </div>
+      </form>
+    </main>
+    <script src="../js/create-quiz.js"></script>
+  </body>
 </html>
