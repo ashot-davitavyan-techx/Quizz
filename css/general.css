@@ -23,6 +23,8 @@
   --main-color-1: rgb(26, 42, 128);
   --main-color-2: rgb(255, 255, 0);
 
+  --white: white;
+
   --exist: 1px rgb(255, 255, 255) solid;
 
   --font-big: clamp(2.7rem, 2.7vw, 3.5rem);
